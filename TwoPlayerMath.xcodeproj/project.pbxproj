@@ -13,6 +13,8 @@
 		3C9A8E861E2D516F002EEA16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9A8E841E2D516F002EEA16 /* Main.storyboard */; };
 		3C9A8E881E2D516F002EEA16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C9A8E871E2D516F002EEA16 /* Assets.xcassets */; };
 		3C9A8E8B1E2D516F002EEA16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9A8E891E2D516F002EEA16 /* LaunchScreen.storyboard */; };
+		3C9A8E941E2D6B91002EEA16 /* PlayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9A8E931E2D6B91002EEA16 /* PlayerModel.m */; };
+		3C9A8E971E2D6B9B002EEA16 /* GameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9A8E961E2D6B9B002EEA16 /* GameModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		3C9A8E871E2D516F002EEA16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C9A8E8A1E2D516F002EEA16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C9A8E8C1E2D516F002EEA16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C9A8E921E2D6B91002EEA16 /* PlayerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerModel.h; sourceTree = "<group>"; };
+		3C9A8E931E2D6B91002EEA16 /* PlayerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerModel.m; sourceTree = "<group>"; };
+		3C9A8E951E2D6B9B002EEA16 /* GameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameModel.h; sourceTree = "<group>"; };
+		3C9A8E961E2D6B9B002EEA16 /* GameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				3C9A8E7F1E2D516F002EEA16 /* AppDelegate.m */,
 				3C9A8E811E2D516F002EEA16 /* ViewController.h */,
 				3C9A8E821E2D516F002EEA16 /* ViewController.m */,
+				3C9A8E921E2D6B91002EEA16 /* PlayerModel.h */,
+				3C9A8E931E2D6B91002EEA16 /* PlayerModel.m */,
+				3C9A8E951E2D6B9B002EEA16 /* GameModel.h */,
+				3C9A8E961E2D6B9B002EEA16 /* GameModel.m */,
 				3C9A8E841E2D516F002EEA16 /* Main.storyboard */,
 				3C9A8E871E2D516F002EEA16 /* Assets.xcassets */,
 				3C9A8E891E2D516F002EEA16 /* LaunchScreen.storyboard */,
@@ -152,6 +162,8 @@
 			files = (
 				3C9A8E831E2D516F002EEA16 /* ViewController.m in Sources */,
 				3C9A8E801E2D516F002EEA16 /* AppDelegate.m in Sources */,
+				3C9A8E971E2D6B9B002EEA16 /* GameModel.m in Sources */,
+				3C9A8E941E2D6B91002EEA16 /* PlayerModel.m in Sources */,
 				3C9A8E7D1E2D516F002EEA16 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
