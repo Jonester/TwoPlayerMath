@@ -12,8 +12,17 @@
 @interface GameModel : NSObject
 
 @property (nonatomic, strong) NSString *question;
+@property (nonatomic, assign) NSInteger answer;
+@property (nonatomic, strong) NSArray *playerArray;
+@property (nonatomic, strong) NSString *answerString;
+@property (nonatomic, strong) PlayerModel *currentPlayer;
+@property (nonatomic, strong) PlayerModel *player1;
+@property (nonatomic, strong) PlayerModel *player2;
 
-- (NSString *)createQuestion: (PlayerModel *)player;
-- (void)checkAnswer: (PlayerModel *)player answer: (NSString *)anwer;
+- (NSString *)createQuestion;
+- (NSString *)checkAnswer: (NSString *)answer;
+- (NSString *)generateAnswerString: (NSInteger)numberTags;
+- (void)startNewGame;
+- (void)nextPlayer;
 
 @end

@@ -10,13 +10,12 @@
 
 @implementation PlayerModel
 
-- (instancetype)initWithName: (NSString *)name andIndex: (NSInteger)currentPlayer
+- (instancetype)initWithName: (NSString *)name index: (NSInteger)currentPlayer score:(NSInteger)score
 {
     self = [super init];
     if (self) {
-        _score = 3;
-        _name = @"Player 1:  ";
-        _currentPlayer = 1;
+        _score = score;
+        _name = name;
     }
     return self;
 }

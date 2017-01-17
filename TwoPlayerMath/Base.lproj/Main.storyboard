@@ -178,16 +178,6 @@
                                             <action selector="numberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YVE-xy-E0x"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 1: X + Y = " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2V2-TM-6pI">
-                                        <rect key="frame" x="32" y="68" width="310" height="70"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="310" id="YZ1-WR-lHa"/>
-                                            <constraint firstAttribute="height" constant="70" id="nd3-gi-pg4"/>
-                                        </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4f-5d-J0E">
                                         <rect key="frame" x="5" y="5" width="175" height="35"/>
                                         <color key="backgroundColor" red="0.65166558159999999" green="0.80056423610000005" blue="0.9538574219" alpha="1" colorSpace="calibratedRGB"/>
@@ -210,6 +200,17 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1: X + Y = " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIp-CG-fNq">
+                                        <rect key="frame" x="32" y="78.5" width="310" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="C0V-GR-TSw"/>
+                                            <constraint firstAttribute="width" constant="310" id="Zrf-iH-IOx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.65166558159999999" green="0.80056423610000005" blue="0.9538574219" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -225,9 +226,9 @@
                                     <constraint firstItem="o4f-5d-J0E" firstAttribute="leading" secondItem="a0x-06-vEz" secondAttribute="leading" constant="5" id="Heg-6B-g8v"/>
                                     <constraint firstItem="vng-ss-MAG" firstAttribute="centerY" secondItem="a0x-06-vEz" secondAttribute="centerY" id="I7H-1s-6gr"/>
                                     <constraint firstItem="qeP-aj-WZl" firstAttribute="leading" secondItem="knK-Ce-OfV" secondAttribute="leading" id="Lx5-ri-hVf"/>
-                                    <constraint firstItem="2V2-TM-6pI" firstAttribute="centerX" secondItem="a0x-06-vEz" secondAttribute="centerX" id="M0M-dl-7j1"/>
+                                    <constraint firstItem="ZJf-9g-nZV" firstAttribute="top" secondItem="sIp-CG-fNq" secondAttribute="bottom" constant="30" id="MRR-H7-0p3"/>
                                     <constraint firstItem="fnT-h4-vvA" firstAttribute="leading" secondItem="ZJf-9g-nZV" secondAttribute="trailing" constant="50" id="Pou-g1-on9"/>
-                                    <constraint firstItem="jlg-pk-VvP" firstAttribute="top" secondItem="2V2-TM-6pI" secondAttribute="bottom" constant="30" id="U7d-je-AuN"/>
+                                    <constraint firstItem="sIp-CG-fNq" firstAttribute="centerX" secondItem="a0x-06-vEz" secondAttribute="centerX" id="U7J-Wc-9ld"/>
                                     <constraint firstItem="8lU-LB-bIp" firstAttribute="top" secondItem="a0x-06-vEz" secondAttribute="top" constant="5" id="cEi-IM-ogf"/>
                                     <constraint firstItem="qeP-aj-WZl" firstAttribute="top" secondItem="knK-Ce-OfV" secondAttribute="bottom" constant="50" id="enw-7B-MTk"/>
                                     <constraint firstItem="M05-8z-OyP" firstAttribute="top" secondItem="nyg-ST-faB" secondAttribute="bottom" constant="50" id="gWb-ot-Znh"/>
@@ -255,7 +256,7 @@
                     <connections>
                         <outlet property="player1Label" destination="o4f-5d-J0E" id="rV4-s4-KrT"/>
                         <outlet property="player2Label" destination="8lU-LB-bIp" id="MfN-by-BbH"/>
-                        <outlet property="questAnsTextField" destination="2V2-TM-6pI" id="C8H-aX-zAh"/>
+                        <outlet property="questAnsLabel" destination="sIp-CG-fNq" id="ysW-Gw-bW5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

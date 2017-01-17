@@ -13,7 +13,6 @@
 @property (nonatomic, strong) NSString *answer;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, assign) NSInteger score;
-@property (nonatomic, assign) NSInteger currentPlayer;
 
-- (instancetype)initWithName: (NSString *)name andIndex: (NSInteger)currentPlayer;
+- (instancetype)initWithName: (NSString *)name index: (NSInteger)currentPlayer score:(NSInteger)currentScore;
 @end
